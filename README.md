@@ -23,7 +23,9 @@ The aim of this project is to demonstrate how to convert an image to grayscale u
 
 8.Clean up allocated memory.
 
-Program:
+# Program:
+
+```
 import cv2
 from numba import cuda
 import sys
@@ -66,6 +68,8 @@ grayscale_image = d_output.copy_to_host()
 cv2_imshow(grayscale_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+```
 
 # OUTPUT:
 Input Image
